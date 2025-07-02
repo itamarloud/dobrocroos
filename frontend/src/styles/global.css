@@ -1,0 +1,74 @@
+/* Reset básico e fontes */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Um cinza claro para o fundo */
+  color: #333; /* Cor de texto padrão */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Estilos para links */
+a {
+  color: #007bff; /* Azul primário para links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container principal da aplicação (opcional, mas útil) */
+#root {
+  /* Pode adicionar estilos aqui se o #root for seu container principal */
+}
+
+/* Adicionar mais estilos globais conforme necessário */
+
+/* Paleta de Cores Sugerida (Tons de Azul) */
+:root {
+  --primary-blue: #007bff; /* Azul vibrante para ações primárias, links */
+  --secondary-blue: #0056b3; /* Azul mais escuro para hover ou elementos secundários */
+  --light-blue: #e6f3ff; /* Azul claro para fundos de destaque, alertas informativos */
+  --dark-blue-text: #002b4d; /* Azul escuro para texto importante, títulos */
+  --neutral-blue-gray: #6c757d; /* Cinza azulado para texto secundário, bordas */
+
+  --success-green: #28a745;
+  --danger-red: #dc3545;
+  --warning-yellow: #ffc107;
+  --info-cyan: #17a2b8;
+
+  --background-light: #ffffff;
+  --background-grey: #f0f2f5;
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --border-color: #dee2e6;
+}
+
+/* Exemplo de uso das variáveis de cor */
+.button-primary {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-primary:hover {
+  background-color: var(--secondary-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-blue-text);
+}
+
+/* Mais estilos virão aqui conforme desenvolvemos os componentes */

@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Production
+build/
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sequelize
+src/config/config.json
