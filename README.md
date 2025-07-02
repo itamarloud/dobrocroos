@@ -44,8 +44,20 @@ npm run dev
 
 **Banco de Dados:**
 *   Certifique-se de que o PostgreSQL está rodando.
-*   Crie um banco de dados para a aplicação.
-*   Execute os scripts em `database/schema.sql` e as migrações em `database/migrations/`.
+*   Crie um banco de dados para a aplicação (ex: `escala_facil_db`).
+*   Configure as variáveis de ambiente no arquivo `.env` do backend (copie de `.env.example` e ajuste `DB_USER`, `DB_PASSWORD`, `DB_NAME`).
+*   Rode as migrações para criar as tabelas:
+    ```bash
+    cd backend
+    npx sequelize-cli db:migrate
+    ```
+*   (Opcional, mas recomendado para o primeiro setup) Rode os seeders para popular dados iniciais (incluindo o usuário administrador padrão):
+    ```bash
+    npx sequelize-cli db:seed:all
+    ```
+    O usuário administrador padrão é:
+    - Email: `itamar@gmail.com`
+    - Senha: `Ita123456`
 ```
 
 Em seguida, criarei os arquivos e diretórios para o backend.
